@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "去百度广告",
+    "description":"使用百度时，清除百度的竞价排名靠前的广告搜索项目",
+    "version": "1.0.0",
+    "browser_action":
+    {
+        "default_icon": "icon/icon32.png",
+        "default_popup": "popup.html"
+    },
+    "icons":{
+        "16": "icon/icon32.png",
+        "48": "icon/icon32.png",
+        "128": "icon/icon32.png"
+    },
+    "permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+    {
+        "matches": ["https://*.baidu.com/*"],
+        "js": ["js/jquery-3.2.1.min.js","js/killbaiduads.js"]
+    }]
+}

@@ -1,0 +1,1 @@
+$("span:contains('广告')").parent().parent().parent().parent().parent().css('display', 'none')
