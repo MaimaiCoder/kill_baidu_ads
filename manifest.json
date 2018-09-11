@@ -5,13 +5,13 @@
     "version": "1.0.0",
     "browser_action":
     {
-        "default_icon": "icon/icon32.png",
+        "default_icon": "icon/icon.png",
         "default_popup": "popup.html"
     },
     "icons":{
-        "16": "icon/icon32.png",
-        "48": "icon/icon32.png",
-        "128": "icon/icon32.png"
+        "16": "icon/icon.png",
+        "48": "icon/icon.png",
+        "128": "icon/icon.png"
     },
     "permissions": [
         "<all_urls>"
