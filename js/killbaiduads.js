@@ -1,4 +1,12 @@
-
+function sleep(numberMillis) {
+    var now = new Date();
+    var exitTime = now.getTime() + numberMillis;
+    while (true) {
+     now = new Date();
+     if (now.getTime() > exitTime) return;
+    }
+ }
+ sleep(2000);
 var loader = setInterval(function(){
     var ads = $("span:contains('广告')");
     if(ads.length<=0){
