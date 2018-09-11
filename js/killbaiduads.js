@@ -1,9 +1,8 @@
 
 var loader = setInterval(function(){
     var ads = $("span:contains('广告')");
-    console.log(ads.length,'====================');
     if(ads.length<=0){
-        console.log('this is 0 ad');
+        console.log('clear ok');
         clearInterval(loader);
     }else{
         //$("span:contains('广告')").parent().parent().parent().parent().parent().css('display', 'none')
